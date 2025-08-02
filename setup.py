@@ -24,6 +24,6 @@ setup(
     author_email='Darshandarsh.t1999@gmail.com',
     packages=find_packages(),
     install_requires=get_requirements('requirements.txt'),
-    python_requires='>=3.8',   # updated to 3.8 and more than that. if that's your venv
+
 )
 
