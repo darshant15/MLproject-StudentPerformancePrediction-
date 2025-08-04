@@ -16,7 +16,7 @@ from src.utils import save_object
 
 @dataclass
 class DataTransformationConfig:
-    preprocessor_obj_file_path=os.path.join('artifacts',"proprocessor.pkl")
+    preprocessor_obj_file_path=os.path.join('artifacts',"preprocessor.pkl")
 
 class DataTransformation:
     def __init__(self):
@@ -24,7 +24,7 @@ class DataTransformation:
 
     def get_data_transformer_object(self):
         '''
-        This function si responsible for data trnasformation
+        This function si responsible for data transfromtion
         
         '''
         try:
@@ -95,7 +95,7 @@ class DataTransformation:
             target_feature_test_df=test_df[target_column_name]
 
             logging.info(
-                f"Applying preprocessing object on training dataframe and testing dataframe."
+               f"Applying preprocessing object on training dataframe and testing dataframe."
             )
 
             input_feature_train_arr=preprocessing_obj.fit_transform(input_feature_train_df)
@@ -121,4 +121,4 @@ class DataTransformation:
                 self.data_transformation_config.preprocessor_obj_file_path,
             )
         except Exception as e:
-           raise CustomException(e,sys)
+            raise CustomException(e,sys)
