@@ -1,4 +1,4 @@
-Here’s a polished **README template** for your GitHub project **MLproject – Student Performance Prediction** (`darshant15/MLproject-StudentPerformancePrediction-`), tailored to your ML pipeline format:
+**MLproject – Student Performance Prediction** (`darshant15/MLproject-StudentPerformancePrediction-`), tailored to your ML pipeline format:
 
 ---
 
